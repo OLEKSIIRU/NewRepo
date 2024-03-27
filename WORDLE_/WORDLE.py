@@ -1,4 +1,4 @@
-﻿import random
+import random
 from tkinter import *
 
 
@@ -264,6 +264,16 @@ purple="#8B00FF"
 
 my_font="Roboto"
 
+# Метки, содержащие каждую букву слова
+box_width = 2
+box_height = 1
+box_borderwidth = 1
+box_relief = "solid"
+box_bg = "#335155"
+box_fg = "#FFFFFF"
+box_font = ("Roboto", 20)
+
+
 root = Tk()
 root.title("Wordle Game")
 root.config(background=black)
@@ -280,15 +290,9 @@ inputBox.pack(pady=10)
 enterButton = Button(root,font=(my_font, 16),text="Submit", command=lambda:allFunctions(inputBox.get()),bg=blue,fg=black)
 enterButton.pack(pady=10)
 
-# Метки, содержащие каждую букву слова
 
-box_width = 2
-box_height = 1
-box_borderwidth = 1
-box_relief = "solid"
-box_bg = "#335155"
-box_fg = "#FFFFFF"
-box_font = ("Roboto", 20)
+
+
 
 x_start = 250  # x-координата меток
 y_start = 300  # y-координата меток
